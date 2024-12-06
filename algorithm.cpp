@@ -10,13 +10,13 @@ class Node{
         Node *right;
         Node(int d){
             data = d;
-            left = NULL;
-            right = NULL;
+            this->left = NULL;
+            this->right = NULL;
         }
 };
 class Solution{
     public:
-  		Node* insert(Node* root, int data) {
+  	    Node* insert(Node* root, int data) {
             if(root == NULL) {
                 return new Node(data);
             }
